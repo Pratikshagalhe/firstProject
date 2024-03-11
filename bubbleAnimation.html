@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbles animation</title>
+    <style>
+        body{
+            height: 100%;
+            width:100%;
+        }
+        .bubble{
+            animation:anime 5s ease 4s infinite;
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: absolute;
+            animation-duration:alternate;
+            border-radius: 50%;
+            align-items: center;
+            margin: 5%;
+        }
+        @keyframes anime{
+            0%{
+                left: 0;
+
+            }
+            25%{
+                left:80%;
+                top:0%;
+                background-color: brown;
+                box-shadow: 10px 4px 5px black;
+            }
+            50%{
+                top: 70%;
+                left: 80%;
+                background-color: rgb(197, 232, 41);
+                box-shadow: 10px 4px 5px black;
+            }
+           75%{
+                top:70%;
+                left: 0%;
+                background-color: darkviolet;
+                box-shadow: 10px 4px 5px black;
+            }
+            100%{
+                top: 0%;
+                left: 0%;
+                background-color: aqua;
+                box-shadow: 10px 4px 5px black;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bubble"></div> 
+</body>
+</html>
